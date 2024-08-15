@@ -7,7 +7,7 @@ const k2d = K2D({ subsets: ["latin"], weight: ["700"] });
 const kaisei_opti = Kaisei_Opti({ subsets: ["latin"], weight: ["500"] });
 const Hero = () => {
     return (
-        <section className="mt-52 pb-56">
+        <section className="mt-52 pb-48">
             <div className="container">
                 {/* Animation in globals.css */}
                 <div className="text-center">
@@ -27,12 +27,12 @@ const Hero = () => {
                         </span>
                         <span className="light-up-down">ULL</span>
                     </h1>
-                    <p className="mt-5 text-base sm:text-lg md:text-xl xl:text-2xl">
+                    <p className="mt-5 text-gray-300 text-base sm:text-lg md:text-xl xl:text-2xl">
                         Ultra Targeted Leads & Sales, Let&apos;s Prey
                     </p>
                 </div>
                 <div className="flex justify-center relative mt-16">
-                    <Image src={eagle} alt="hero Image" />
+                    <Image src={eagle} alt="hero Image" priority={true} />
                     {/* in Global.css file */}
                     <div className="light" />
                 </div>

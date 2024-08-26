@@ -1,22 +1,24 @@
-import Header from "@/components/Header/Header";
-import Hero from "@/components/Hero";
+import Achievments from "@/components/Achievments/Achievments";
+import Hero from "@/components/Hero/Hero";
 import HugeUpdate from "@/components/HugeUpdate/HugeUpdate";
+import OurSolution from "@/components/OurSolution/OurSolution";
 import Profile from "@/components/Profile/Profile";
-import dynamic from "next/dynamic";
-const FixedVideoBackground = dynamic(() => import("@/components/FixedVideoBackground"), {
-    ssr: false,
-});
+import Revenue from "@/components/Revenue/Revenue";
+import Updates2024 from "@/components/Updates2024/Updates2024";
+import WiliamJohnson from "@/components/WiliamJohnson/WiliamJohnson";
 
-export default function Home() {
+export default async function Home() {
+
     return (
         <>
-            <Header />
-              <FixedVideoBackground />
-            <main>
-                <Hero />
-                <HugeUpdate />
-                <Profile />
-            </main>
+            <Hero />
+            <HugeUpdate />
+            <Profile />
+            <OurSolution />
+            <Achievments />
+            <Revenue />
+            <Updates2024 />
+            <WiliamJohnson />
         </>
     );
 }

@@ -15,10 +15,12 @@
         --background-end-rgb: 0, 0, 0;
     }
 }
-
+html,
+body {
+    overflow-x: hidden;
+}
 body {
     color: rgb(var(--foreground-rgb));
-    overflow-x: hidden;
     background: linear-gradient(
             to bottom,
             transparent,
@@ -26,7 +28,9 @@ body {
         )
         rgb(var(--background-start-rgb));
 }
-
+.section-padding {
+    @apply py-14 sm:py-16 md:py-20 lg:py-24 xl:py-28;
+}
 @layer utilities {
     .text-balance {
         text-wrap: balance;

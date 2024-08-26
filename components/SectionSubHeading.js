@@ -1,8 +1,8 @@
 
 
-const SectionSubHeading = ({chilren}) => {
+const SectionSubHeading = ({children,className}) => {
   return (
-    <p className="text-base md:text-lg lg:text-xl xl:text-2xl text-gray-300">
+    <p className={`text-base md:text-lg lg:text-xl text-gray-300 ${className}`}>
         {children}
     </p>
   )

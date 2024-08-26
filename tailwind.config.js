@@ -32,7 +32,7 @@ module.exports = {
                 secondary: "#53040B",
             },
             backgroundImage: {
-                "vector": "url(/Vector.webp)"
+                "vector": "url(/vector.webp)"
             },
         },
     },

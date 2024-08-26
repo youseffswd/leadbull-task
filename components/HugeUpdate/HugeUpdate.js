@@ -4,7 +4,7 @@ import Information from "./Information";
 
 const HugeUpdate = () => {
     return (
-        <section className={`py-14 bg-vector bg-cover`}>
+        <section className={`section-padding bg-vector bg-cover`}>
             <div className="container">
                 <Caption />
                 <div className="relative lg:h-[1000px] lg:mb-10 xl:mb-0">

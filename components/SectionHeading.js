@@ -1,6 +1,6 @@
-const SectionHeading = ({ children }) => {
+const SectionHeading = ({ children,className }) => {
     return (
-        <h2 className={`text-main text-center font-bold mb-8 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl`}>
+        <h2 className={`${className} text-main text-center font-bold mb-8 text-3xl md:text-4xl lg:text-5xl`}>
             {children}
         </h2>
     );

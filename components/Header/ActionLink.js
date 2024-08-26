@@ -1,9 +1,10 @@
-import React from "react";
+import Link from "next/link";
+
 
 const ActionLink = ({children,href,className}) => {
     return (
         <li>
-            <a className={`${className}`} href={href}>{children}</a>
+            <Link className={`${className} text-sm font-semibold border border-white rounded-2xl py-5 px-7 xl:px-8`} href={href}>{children}</Link>
         </li>
     );
 };

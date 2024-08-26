@@ -4,7 +4,7 @@ import Image from "next/image";
 import eagle from "@/public/eagle.webp";
 const Profile = () => {
     return (
-        <section className="py-14 bg-vector bg-cover">
+        <section className="section-padding bg-vector bg-cover">
             <div className="container">
                 <SectionHeading>Profile</SectionHeading>
                 <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5">
@@ -20,14 +20,16 @@ const Profile = () => {
                             />
                         </div>
                         <Box
-                        className={"flex-1 "}
+                            className={"flex-1 "}
                             title="Values​"
                             description="Our core values include elimination of privacy concerns, and adherence to global marketing regulations"
                         />
                     </div>
-                    <div className="max-w-[420px]">
+                    <div className="max-w-[420px] mx-auto">
                         <Image src={eagle} alt="eagle" />
-                        <h4 className="mx-auto w-fit mt-4 font-semibold text-3xl bg-gradient-to-r from-main to-secondary bg-clip-text text-transparent">LEADBULL LLC</h4>
+                        <h4 className="mx-auto w-fit mt-4 font-semibold text-3xl bg-gradient-to-r from-main to-secondary bg-clip-text text-transparent">
+                            LEADBULL LLC
+                        </h4>
                     </div>
                 </div>
             </div>

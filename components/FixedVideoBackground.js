@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef } from "react";
+import Overlay from "./Overlay";
 
 const FixedVideoBackground = () => {
     const video = useRef(null);
@@ -21,7 +22,7 @@ const FixedVideoBackground = () => {
                 poster="/fixed-video.webp"
                 preload="none"
             ></video>
-            <div className="overlay" />
+            <Overlay />
         </div>
     );
 };

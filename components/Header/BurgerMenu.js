@@ -1,8 +1,8 @@
-const BurgerMenu = ({onClick,open}) => {
+const BurgerMenu = ({ onClick, open }) => {
     const clickHandler = () => {
-        onClick((prev) => !prev);
-    }
-
+        onClick(prev => !prev);
+    };
+   
     /* Style in globals css file */
     return (
         <div className={`menu-btn ${open && "open"}`} onClick={clickHandler}>
